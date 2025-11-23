@@ -1,2 +1,2 @@
 wpeinit
-explorer++.exe
+PortableTaskbar.exe
