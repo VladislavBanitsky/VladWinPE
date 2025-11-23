@@ -16,6 +16,8 @@ Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10
 
 Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-DismCmdlets.cab"
 
+Поместить портативные программы в Windows
+В startnet.cmd можно прописать автоматический запуск
 Заменить файлы Windows/System32/winpe.jpg и startnet.cmd
 
 Dism /Unmount-Image /MountDir:"D:\VladPE_2025\mount" /commit
