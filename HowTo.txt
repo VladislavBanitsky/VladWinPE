@@ -1,0 +1,22 @@
+copype amd64 D:\VladPE_2025
+
+Dism /Mount-Image /ImageFile:"D:\VladPE_2025\media\sources\boot.wim" /index:1 /MountDir:"D:\VladPE_2025\mount"
+
+Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Scripting.cab"
+
+Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-WMI.cab"
+
+Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-NetFX.cab"
+
+Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-SecureStartup.cab"
+
+Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-EnhancedStorage.cab"
+
+Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-StorageWMI.cab"
+
+Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-DismCmdlets.cab"
+
+Заменить файлы Windows/System32/winpe.jpg и startnet.cmd
+
+Dism /Unmount-Image /MountDir:"D:\VladPE_2025\mount" /commit
+MakeWinPEMedia /ISO D:\VladPE_2025 D:\VladPE_2025.iso
