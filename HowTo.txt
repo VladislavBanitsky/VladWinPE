@@ -16,9 +16,14 @@ Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10
 
 Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-DismCmdlets.cab"
 
-Поместить портативные программы в Windows
-В startnet.cmd можно прописать автоматический запуск
+Поместить папку _internal с портативными программами и PortableTaskbar.exe в папку Windows
+
+В startnet.cmd прописать автоматический запуск PortableTaskbar.exe
+
 Заменить файлы Windows/System32/winpe.jpg и startnet.cmd
 
 Dism /Unmount-Image /MountDir:"D:\VladPE_2025\mount" /commit
+
 MakeWinPEMedia /ISO D:\VladPE_2025 D:\VladPE_2025.iso
+
+pyinstaller "D:/Program_files/JetBrains/VladWinPE/script.py" --name "PortableTaskbar" --windowed --add-data "D:/Program_files/JetBrains/VladWinPE/!portableApps/*;."
