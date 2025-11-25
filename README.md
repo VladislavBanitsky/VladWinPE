@@ -36,7 +36,7 @@ Just [download](https://github.com/VladislavBanitsky/VladWinPE/releases/tag/v.1.
 
 `Dism /Add-Package /Image:"D:\VladPE_2025\mount" /PackagePath:"D:\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-DismCmdlets.cab"`
 
-3. Download your favourite apps as portable, then create folders for each of them in folder `!portableApps`, also download icons (recommended 256x256px) and save them into the folder `icons` (in folder `!portableApps`). Then edit `defaultConfig` JSON-variable in in file `script.py`: enter correct paths to apps and icons
+3. Download your favourite apps as portable, then create folders for each of them in folder `!portableApps`, also download icons (recommended 256x256px) and save them into the folder `icons` (in folder `!portableApps`). Then edit `default_config` JSON-variable in in file `script.py`: enter correct paths to apps and icons
 
 4. Create exe-file by pyintsaller from script.py and folder `!portableApps` with apps and icons added on previous step:
 `pyinstaller "D:/Program_files/JetBrains/VladWinPE/script.py" --name "PortableTaskbar" --windowed --add-data "D:/Program_files/JetBrains/VladWinPE/!portableApps/*;."`
