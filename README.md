@@ -12,6 +12,9 @@ Image size: 655 MB.
 - Windows Cmd
 - Windows Notepad
 - PortableTaskbar (designed specifically for VladWinPE)
+
+The author of VladWinPE is not responsible for any consequences from the use of this development. All software is provided in an unchanged form and in compliance with the copyrights of its copyright holders.
+
 ## How to create a bootable USB flash drive
 Just [download](https://github.com/VladislavBanitsky/VladWinPE/releases/tag/v.1.0) the image and create a flash drive using any program convenient for you, such as Rufus or Ventoy, and enjoy the ease, portability and convenience!
 ## How to build and customize
