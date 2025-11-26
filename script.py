@@ -34,7 +34,7 @@ class WinPETaskbar:
             "taskbar": {
                 "position": "bottom",
                 "height": 60,
-                "width": 290,
+                "width": 430,
                 "corner_radius": 15,
                 "background_color": "#1F85DE",
                 "opacity": 0.9
@@ -79,6 +79,27 @@ class WinPETaskbar:
                     "name": "AIDA64 Extreme",
                     "executable": "X:/Windows/_internal/aida64/aida64.exe",
                     "icon_path": "X:/Windows/_internal/icons/aida64.png",
+                    "icon_index": 0,
+                    "working_directory": ""
+                },
+                {
+                    "name": "Диспетчер задач",
+                    "executable": "taskmgr.exe",
+                    "icon_path": "X:/Windows/_internal/icons/taskmgr.png",
+                    "icon_index": 0,
+                    "working_directory": ""
+                },
+                {
+                    "name": "killdisk",
+                    "executable": "X:/Windows/_internal/killdisk/KillDisk.exe",
+                    "icon_path": "X:/Windows/_internal/icons/killdisk.png",
+                    "icon_index": 0,
+                    "working_directory": ""
+                },
+                {
+                    "name": "Partition Wizard",
+                    "executable": "X:/Windows/_internal/partitionwizard/partitionwizard.exe",
+                    "icon_path": "X:/Windows/_internal/icons/diskmgmt.png",
                     "icon_index": 0,
                     "working_directory": ""
                 }

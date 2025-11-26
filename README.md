@@ -9,8 +9,11 @@ Image size: 655 MB.
 - CrystalDiskInfo
 - CrystalDiskMark
 - Explorer++
+- Active@ KillDisk
+- MiniTool Partition Wizard
 - Windows Cmd
 - Windows Notepad
+- Windows Task Manager
 - PortableTaskbar (designed specifically for VladWinPE)
 
 The author of VladWinPE is not responsible for any consequences from the use of this development. All software is provided in an unchanged form and in compliance with the copyrights of its copyright holders.
@@ -54,6 +57,6 @@ Just [download](https://github.com/VladislavBanitsky/VladWinPE/releases/tag/v.1.
 
 `Dism /Unmount-Image /MountDir:"D:\VladPE_2025\mount" /commit`
 
-`MakeWinPEMedia /ISO D:\VladPE_2025 D:\VladPE_2025.iso`
+`MakeWinPEMedia /ISO D:\VladPE_2025 D:\VladWinPE_2025.iso`
 
 
