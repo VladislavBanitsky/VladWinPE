@@ -34,7 +34,7 @@ class WinPETaskbar:
             "taskbar": {
                 "position": "bottom",
                 "height": 60,
-                "width": 430,
+                "width": 470,
                 "corner_radius": 15,
                 "background_color": "#1F85DE",
                 "opacity": 0.9
@@ -100,6 +100,13 @@ class WinPETaskbar:
                     "name": "Partition Wizard",
                     "executable": "X:/Windows/_internal/partitionwizard/partitionwizard.exe",
                     "icon_path": "X:/Windows/_internal/icons/diskmgmt.png",
+                    "icon_index": 0,
+                    "working_directory": ""
+                },
+                {
+                    "name": "Power OFF",
+                    "executable": "X:/Windows/_internal/PortableOff.exe",
+                    "icon_path": "X:/Windows/_internal/icons/powerbtn.png",
                     "icon_index": 0,
                     "working_directory": ""
                 }
@@ -203,7 +210,6 @@ class WinPETaskbar:
         try:
             if working_directory and os.path.exists(working_directory):
                 os.chdir(working_directory)
-
             # Использовать os.system для простоты в WinPE
             os.system(f'start "" "{executable}"')
 
