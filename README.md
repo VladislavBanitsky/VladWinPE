@@ -54,7 +54,7 @@ Just [download](https://github.com/VladislavBanitsky/VladWinPE/releases/tag/v.1.
 
 7. Automatic startup `PortableTaskbar.exe` is already registered in `startnet.cmd`. You can add also special what do you want
 
-8. Replace files `winpe.jpg` and `startnet.cmd` in the folder `D:/VladPE_2025/mount/Windows/System32`. You may need to change the file permissions in their properties
+8. Replace files `winpe.jpg` and `winpeshl.ini` in the folder `D:/VladPE_2025/mount/Windows/System32`. You can also delete the `startnet.cmd` file. You may need to change the file permissions in their properties
 
 9. Save changes and unmount the image by entering the commands:
 
