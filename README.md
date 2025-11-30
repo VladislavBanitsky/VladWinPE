@@ -3,7 +3,7 @@ Meet the lightest WinPE that will fit on any USB stick!
 <img src="img1.png">
 <img src="img2.png">
 
-Image size: 1,39 Gb. 
+Image size: 1,4 Gb. 
 ## A set of portable programs (downloaded from official websites):
 - AIDA 64 EXTREME
 - CrystalDiskInfo
